@@ -8,7 +8,7 @@ function App() {
       <button className="ui icon red button">
         <i className="user icon"></i> CSS Button
       </button>
-      <Button icon ='smile' content = 'Reaact button' color="green"  />
+      <Button icon ='smile' content = 'React button' color="green"  />
     </div>
 
   )
