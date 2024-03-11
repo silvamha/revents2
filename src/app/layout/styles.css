@@ -1,3 +1,20 @@
+/**
+ * FILEPATH: /c:/Users/silva/OneDrive/Desktop/Projects/REACT and REDUX/Projects/revents2/src/app/layout/styles.css
+ * 
+ * This CSS file contains styles for the layout of the application.
+ * It imports the Semantic UI CSS library and defines styles for the body, fixed menu, and main container.
+ * 
+ * @import url('semantic-ui-css/semantic.min.css');
+ * 
+ * body:
+ * - Sets the background color of the body to #eaeaea.
+ * 
+ * .ui.fixed.menu:
+ * - Sets the background image of the fixed menu to a linear gradient from rgb(24, 42, 115) to rgb(32, 167, 172).
+ * 
+ * .ui.main.container:
+ * - Sets the top margin of the main container to 7em.
+ */
 @import url('semantic-ui-css/semantic.min.css');
 
 body {
