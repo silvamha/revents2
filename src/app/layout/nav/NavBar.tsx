@@ -1,5 +1,9 @@
 import { Button, Container, Menu, MenuItem } from "semantic-ui-react";
 
+/**
+ * Renders the navigation bar component.
+ * @returns The JSX element representing the navigation bar.
+ */
 export default function NavBar() {
     return (
         <Menu inverted={true} fixed="top" >
