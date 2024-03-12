@@ -1,11 +1,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, Icon, Item, ItemGroup, List, Segment, SegmentGroup } from "semantic-ui-react";
 import EventListAttendee from "./EventListAttendee";
+import { AppEvent } from "../../../types/events";
 
+
+type Props = {
+    event: AppEvent
+}
 /**
  * Renders a single event item in the dashboard.
  */
-export default function EventListItem({ event }: any) {
+export default function EventListItem({ event }: Props) {
     return (
         <SegmentGroup>
             <Segment>
@@ -28,12 +33,12 @@ export default function EventListItem({ event }: any) {
             <Segment secondary>
                 <List horizontal>
                     {event.attendees.map((attendee: any) => (
-                        <EventListAttendee attendee={attendee} />
+                        <EventListAttendee key ={attendee.id} attendee ={attendee} />
                     ))}
                 </List>
             </Segment>
             <Segment clearing>
-                <span>Description of the Event</span>
+                <span>Description of the event {event.description}</span>
                 <Button color="teal" floated="right" content="view" />
             </Segment>
         </SegmentGroup>
