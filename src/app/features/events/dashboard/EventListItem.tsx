@@ -15,7 +15,7 @@ export default function EventListItem() {
                     <Item.Content>
                         <Item.Header>Event Title</Item.Header>
                         <Item.Description>
-                            Hoested by Bob
+                            Hosted by Bob
                         </Item.Description>
                     </Item.Content>
                 </ItemGroup>
