@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, Icon, Item, ItemGroup, List, Segment, SegmentGroup } from "semantic-ui-react";
 import EventListAttendee from "./EventListAttendee";
 
 /**
  * Renders a single event item in the dashboard.
  */
-export default function EventListItem({ event: any }) {
+export default function EventListItem({ event }: any) {
     return (
         <SegmentGroup>
             <Segment>
@@ -13,10 +14,10 @@ export default function EventListItem({ event: any }) {
                         <Item.Image size="tiny" circular src={event.hotPhotoURL} />
                     </Item>
                     <Item.Content>
-                        <Item.Header>{event.title}</Item.Header> 
-                            <Item.Description>
-                                Hosted by {event.hostedBy}
-                            </Item.Description>
+                        <Item.Header>{event.title}</Item.Header>
+                        <Item.Description>
+                            Hosted by {event.hostedBy}
+                        </Item.Description>
                     </Item.Content>
                 </ItemGroup>
             </Segment>
@@ -27,9 +28,12 @@ export default function EventListItem({ event: any }) {
             <Segment secondary>
                 <List horizontal>
                     {event.attendees.map((attendee: any) => (
-                        <EventListAttendee attendee = {attendee} />
+                         <EventListAttendee attendee = {attendee}/>  
                     ))}
+
+                 
                 </List>
+
             </Segment>
             <Segment clearing>
                 <span>Description of the Event</span>
