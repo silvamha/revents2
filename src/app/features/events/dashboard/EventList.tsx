@@ -1,5 +1,6 @@
 import EventListItem from "./EventListItem";
 
+
 /**
  * Renders a list of event items.
  *
@@ -7,8 +8,13 @@ import EventListItem from "./EventListItem";
  */
 export default function EventList(props: any) {
   return (
-{    <>
-{props.events.map((event:any))}
+    <>
+        {
+      props.events.map((event: any) => (
+        <EventListItem event = {event} />
+      ))
+    }
     </>
-  );
+
+  )
 }

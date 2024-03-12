@@ -24,7 +24,7 @@ export default function EventForm() {
         <input type = "text" placeholder = "Date" />
     </Form.Field>
     <Button type="submit" floated ="right" positive content = "Sumbit"  />
-    <Button type="submit" floated ="right"  content = "Cancel"  />
+    <Button type="button" floated ="right"  content = "Cancel"  />
 </Form>
 </Segment>
   )
