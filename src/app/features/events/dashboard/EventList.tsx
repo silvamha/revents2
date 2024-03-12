@@ -5,13 +5,10 @@ import EventListItem from "./EventListItem";
  *
  * @returns The rendered EventList component.
  */
-export default function EventList() {
+export default function EventList(props: any) {
   return (
-    <>
-      <EventListItem />
-      <EventListItem />
-      <EventListItem />
-      <EventListItem />
+{    <>
+{props.events.map((event:any))}
     </>
   );
 }
