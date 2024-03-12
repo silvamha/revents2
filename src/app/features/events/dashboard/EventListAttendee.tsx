@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { List, Image } from "semantic-ui-react";
 
 /**

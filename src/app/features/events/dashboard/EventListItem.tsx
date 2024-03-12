@@ -11,14 +11,14 @@ export default function EventListItem({ event }: any) {
             <Segment>
                 <ItemGroup>
                     <Item>
-                        <Item.Image size="tiny" circular src={event.hotPhotoURL} />
+                        <Item.Image size="tiny" circular src={event.hostPhotoURL} />
+                        <Item.Content>
+                            <Item.Header>{event.title}</Item.Header>
+                            <Item.Description>
+                                Hosted by {event.hostedBy}
+                            </Item.Description>
+                        </Item.Content>
                     </Item>
-                    <Item.Content>
-                        <Item.Header>{event.title}</Item.Header>
-                        <Item.Description>
-                            Hosted by {event.hostedBy}
-                        </Item.Description>
-                    </Item.Content>
                 </ItemGroup>
             </Segment>
             <Segment>
@@ -28,12 +28,9 @@ export default function EventListItem({ event }: any) {
             <Segment secondary>
                 <List horizontal>
                     {event.attendees.map((attendee: any) => (
-                         <EventListAttendee attendee = {attendee}/>  
+                        <EventListAttendee attendee={attendee} />
                     ))}
-
-                 
                 </List>
-
             </Segment>
             <Segment clearing>
                 <span>Description of the Event</span>
