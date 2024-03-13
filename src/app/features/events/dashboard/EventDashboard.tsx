@@ -11,8 +11,9 @@ import { sampleData } from "../form/api/sampleData";
 
 type Props = {
   formOpen: boolean
+  setFormOpen: (value:boolean) => void
 }
-export default function EventDashboard({ formOpen }: Props) {
+export default function EventDashboard({ formOpen, setFormOpen }: Props) {
   return (
     <Grid>
       <Grid.Column width={10}>
@@ -22,7 +23,7 @@ export default function EventDashboard({ formOpen }: Props) {
       </Grid.Column>
       <Grid.Column width={6}>
         {formOpen &&
-          <EventForm />
+          <EventForm setFormOpen = {setFormOpen} />
         }
       </Grid.Column>
     </Grid>

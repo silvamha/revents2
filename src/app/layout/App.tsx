@@ -18,7 +18,7 @@ const [formOpen, setFormOpen] = useState(false)
     <>
       <NavBar setFormOpen = {setFormOpen} />
       <Container className="main">
-        <EventDashboard formOpen={formOpen} />
+        <EventDashboard formOpen={formOpen} setFormOpen = {setFormOpen} />
       </Container>
     </>
   );
