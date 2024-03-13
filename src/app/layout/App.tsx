@@ -27,5 +27,6 @@ const [formOpen, setFormOpen] = useState(false)
 export default App
 
 /**!SECTION
- * 
+ * Taking a break and moving to VueJS temporarily as of 03/13/24
+ * The goal is to cover react at a later date
  */
