@@ -8,16 +8,22 @@ import { sampleData } from "../form/api/sampleData";
  * 
  * @returns The rendered EventDashboard component.
  */
-export default function EventDashboard() {
+
+type Props = {
+  formOpen: boolean
+}
+export default function EventDashboard({ formOpen }: Props) {
   return (
     <Grid>
       <Grid.Column width={10}>
         <EventList
-          events={sampleData}
+          events={sampleData as AppEvent[]}
         />
       </Grid.Column>
       <Grid.Column width={6}>
-        <EventForm />
+        {formOpen &&
+          <EventForm />
+        }
       </Grid.Column>
     </Grid>
   )

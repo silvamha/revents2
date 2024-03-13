@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { AppEvent } from "../../../types/events"; 
 import EventListItem from "./EventListItem";
 
 type Props = {

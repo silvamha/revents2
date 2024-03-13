@@ -14,7 +14,7 @@ export type AppEvent = {
     attendeeIds: string[]
     isHost?: boolean
     isGoing?: boolean
-    latLng?: LatLng    
+    // latLng?: LatLng    
 }
 
 export type Attendee = {
